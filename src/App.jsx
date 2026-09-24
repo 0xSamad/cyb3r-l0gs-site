@@ -297,9 +297,6 @@ function Credentials() {
       <div className="credential-grid">
         {credentials.map((credential, index) => (
           <article className="credential-card" key={credential.title}>
-            <div className="credential-image">
-              <img src={credential.image} alt={`${credential.title} credential`} loading="lazy" />
-            </div>
             <div className="credential-copy">
               <span>0{index + 1}</span>
               <div>

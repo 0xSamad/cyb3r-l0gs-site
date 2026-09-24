@@ -26,4 +26,4 @@ For Docker Compose, run `docker compose up --build`. Set `PORT` to change the ho
 
 ## Content and privacy
 
-Only approved public-facing portraits, certification artwork, professional summaries, and LinkedIn links are used by the app. Source CVs and PDFs are ignored by Git and never included in the Vite production bundle.
+Only approved public-facing portraits, professional summaries, and LinkedIn links are used by the app. Source CVs, PDFs, and certificate artwork are ignored by Git and never included in the Vite production bundle.

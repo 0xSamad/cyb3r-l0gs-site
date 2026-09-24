@@ -3,13 +3,6 @@ import haziqPortrait from '../haziq saleem.jpeg'
 import imranPortrait from '../imran ali.jpeg'
 import shaheerPortrait from '../shaheer pic.jpeg'
 
-import imranIgnite from '../imran ali cert.jpeg'
-import imranAoc2024 from '../imran ali cert2.jpeg'
-import shaheerPjpt from '../shaheer PJPT.jpeg'
-import shaheerCrtom from '../shaheer crtom.jpeg'
-import shaheerDante from '../shaheer dante.jpeg'
-import shaheerZephyr from '../shaheer zephyr.jpeg'
-
 export const linkedin = 'https://www.linkedin.com/company/cyb3r-l0gs/'
 
 export const members = [
@@ -91,10 +84,10 @@ export const capabilities = [
 ]
 
 export const credentials = [
-  { title: 'Practical Junior Penetration Tester', issuer: 'TCM Security', image: shaheerPjpt },
-  { title: 'Certified Red Team Operations Management', issuer: 'RedTeamLeaders', image: shaheerCrtom },
-  { title: 'DANTE Pro Lab', issuer: 'Hack The Box', image: shaheerDante },
-  { title: 'ZEPHYR Pro Lab', issuer: 'Hack The Box', image: shaheerZephyr },
-  { title: 'Digital Pakistan Cybersecurity Hackathon', issuer: 'Ignite', image: imranIgnite },
-  { title: 'Advent of Cyber 2024', issuer: 'TryHackMe', image: imranAoc2024 },
+  { title: 'Practical Junior Penetration Tester', issuer: 'TCM Security' },
+  { title: 'Certified Red Team Operations Management', issuer: 'RedTeamLeaders' },
+  { title: 'DANTE Pro Lab', issuer: 'Hack The Box' },
+  { title: 'ZEPHYR Pro Lab', issuer: 'Hack The Box' },
+  { title: 'Digital Pakistan Cybersecurity Hackathon', issuer: 'Ignite' },
+  { title: 'Advent of Cyber 2024', issuer: 'TryHackMe' },
 ]
