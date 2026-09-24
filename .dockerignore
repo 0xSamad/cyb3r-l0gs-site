@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.git/
+.vercel/
+.openai/
+
+*.log
+.DS_Store
+.env*
+!.env.example
+
+# Private source documents are not needed in the image or build context.
+*.pdf
+*.docx
+~$*
+
+# Only images referenced by the public site enter the build context.
+/*.jpeg
+!/Abdul Samad Aurakzai.jpeg
+!/haziq saleem.jpeg
+!/imran ali.jpeg
+!/imran ali cert.jpeg
+!/imran ali cert2.jpeg
+!/shaheer pic.jpeg
+!/shaheer PJPT.jpeg
+!/shaheer crtom.jpeg
+!/shaheer dante.jpeg
+!/shaheer zephyr.jpeg

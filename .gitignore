@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.vercel/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Private source documents are intentionally excluded from deployment/version control.
+*.pdf
+*.docx
+~$*
+
+# Only images referenced by the public site are versioned.
+/*.jpeg
+!/Abdul Samad Aurakzai.jpeg
+!/haziq saleem.jpeg
+!/imran ali.jpeg
+!/imran ali cert.jpeg
+!/imran ali cert2.jpeg
+!/shaheer pic.jpeg
+!/shaheer PJPT.jpeg
+!/shaheer crtom.jpeg
+!/shaheer dante.jpeg
+!/shaheer zephyr.jpeg
