@@ -15,7 +15,6 @@ export const members = [
     summary:
       'Penetration tester focused on web applications, Active Directory, network security, and practical red-team operations.',
     skills: ['Web Security', 'Active Directory', 'Red Teaming'],
-    credentials: ['PJPT', 'PT1', 'CRTOM', 'CEH', 'Google Cybersecurity'],
     signal: 'PCC 2025 qualifier · IMHackathon runner-up',
   },
   {
@@ -27,7 +26,6 @@ export const members = [
     summary:
       'Junior penetration tester and security researcher working across web, API, network, and AI-assisted security testing.',
     skills: ['API Security', 'Bug Bounty', 'Network Pentesting'],
-    credentials: ['eJPT', 'PT1', 'CNSP', 'ISC2 CC', 'Google Cybersecurity'],
     signal: 'AsefaSec pentester · HackerOne researcher',
   },
   {
@@ -39,7 +37,6 @@ export const members = [
     summary:
       'Security enthusiast building hands-on depth in web exploitation, open-source intelligence, and competitive CTF problem solving.',
     skills: ['OSINT', 'SQL Injection', 'Web Exploitation'],
-    credentials: ['OSINT Foundations', 'Cybersecurity Awareness'],
     signal: 'Holmes CTF · Hack4Bug CTF',
   },
   {
@@ -51,7 +48,6 @@ export const members = [
     summary:
       'Cybersecurity researcher and OSINT analyst focused on reconnaissance, vulnerability assessment, and custom security tooling.',
     skills: ['Threat Intel', 'Reconnaissance', 'Security Research'],
-    credentials: ['THM Jr Penetration Tester', 'Cyber Security 360', 'Advent of Cyber'],
     signal: 'Top 1% TryHackMe · Founder, DARKSCAN',
   },
 ]
@@ -81,13 +77,4 @@ export const capabilities = [
     text: 'Exploring AI-powered attack surfaces and using automation to accelerate practical security research.',
     tags: ['Prompt security', 'Automation', 'ML', 'Tooling'],
   },
-]
-
-export const credentials = [
-  { title: 'Practical Junior Penetration Tester', issuer: 'TCM Security' },
-  { title: 'Certified Red Team Operations Management', issuer: 'RedTeamLeaders' },
-  { title: 'DANTE Pro Lab', issuer: 'Hack The Box' },
-  { title: 'ZEPHYR Pro Lab', issuer: 'Hack The Box' },
-  { title: 'Digital Pakistan Cybersecurity Hackathon', issuer: 'Ignite' },
-  { title: 'Advent of Cyber 2024', issuer: 'TryHackMe' },
 ]

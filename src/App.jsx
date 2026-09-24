@@ -2,22 +2,19 @@ import { useEffect, useState } from 'react'
 import {
   ArrowDownRight,
   ArrowRight,
-  Check,
   ChevronRight,
   ExternalLink,
   Linkedin,
   Menu,
-  ShieldCheck,
   Terminal,
   X,
 } from 'lucide-react'
-import { capabilities, credentials, linkedin, members } from './data.js'
+import { capabilities, linkedin, members } from './data.js'
 
 const navItems = [
   ['About', 'about'],
   ['Capabilities', 'capabilities'],
   ['Roster', 'roster'],
-  ['Credentials', 'credentials'],
 ]
 
 function Logo() {
@@ -133,7 +130,7 @@ function Hero() {
         <div className="hero-metrics reveal delay-3" aria-label="Team facts">
           <div><strong>04</strong><span>Core operators</span></div>
           <div><strong>05+</strong><span>Security domains</span></div>
-          <div><strong>25+</strong><span>Credentials held</span></div>
+          <div><strong>40+</strong><span>Labs completed</span></div>
           <div><strong>2025</strong><span>Team established</span></div>
         </div>
       </section>
@@ -157,7 +154,6 @@ function Hero() {
 
       <Capabilities />
       <Roster />
-      <Credentials />
       <Contact />
     </main>
   )
@@ -248,12 +244,6 @@ function MemberModal({ member, onClose }) {
           <h2 id="member-modal-title">{member.name}</h2>
           <p className="modal-role">{member.role}</p>
           <p className="modal-summary">{member.summary}</p>
-          <div className="modal-label">Credential stack</div>
-          <ul className="credential-list">
-            {member.credentials.map((credential) => (
-              <li key={credential}><Check size={14} /> {credential}</li>
-            ))}
-          </ul>
           <p className="member-signal"><Terminal size={15} /> {member.signal}</p>
           <a className="button button-primary" href={member.linkedin} target="_blank" rel="noreferrer">
             LinkedIn profile <ExternalLink size={16} />
@@ -281,36 +271,6 @@ function Roster() {
         </div>
       </div>
       {selected && <MemberModal member={selected} onClose={() => setSelected(null)} />}
-    </section>
-  )
-}
-
-function Credentials() {
-  return (
-    <section className="section shell" id="credentials">
-      <SectionHeading
-        index="04"
-        eyebrow="PROOF OF WORK"
-        title="Training leaves artifacts."
-        copy="A selection from the team's practical labs, certifications, and competition record."
-      />
-      <div className="credential-grid">
-        {credentials.map((credential, index) => (
-          <article className="credential-card" key={credential.title}>
-            <div className="credential-copy">
-              <span>0{index + 1}</span>
-              <div>
-                <h3>{credential.title}</h3>
-                <p>{credential.issuer}</p>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-      <div className="proof-note">
-        <ShieldCheck size={22} />
-        <p>Beyond the badges: team members have completed 40+ PortSwigger labs, 20+ HTB/THM machines, and multiple national CTF and hackathon events.</p>
-      </div>
     </section>
   )
 }
